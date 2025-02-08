@@ -22,9 +22,9 @@ STATICFILES_DIRS = [
 SECRET_KEY = 'django-insecure-k)$y@t)a3)@vuj46a*cz!60rw*dbkyb*9tjrd2e&h-8^8xdpl6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["https://react-django-seg8.onrender.com/"]
+ALLOWED_HOSTS = ["react-django-seg8.onrender.com"]
 
 
 # Application definition
