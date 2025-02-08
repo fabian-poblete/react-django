@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const taskAPI = axios.create({
-  baseURL: "http://localhost:8000/tasks/api/v1/tasks/",
+  baseURL: "https://react-django-seg8.onrender.com/tasks/api/v1/tasks/",
 });
 
 // Es lo mismo ambas funciones en cuanto a sintaxis,
