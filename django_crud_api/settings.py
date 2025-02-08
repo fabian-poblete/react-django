@@ -1,9 +1,18 @@
-
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = 'static/'
+
+# This tells Django where to collect static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this line
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'client/build/static'),
+]
 
 
 # Quick-start development settings - unsuitable for production
