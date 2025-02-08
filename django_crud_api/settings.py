@@ -11,7 +11,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this line
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'client/build/static'),
+    os.path.join(BASE_DIR, 'client/build/static'),  # Point to your React static files
 ]
 
 
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'django_crud_api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'client/build')],  # Point to your React build directory
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,6 +71,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'django_crud_api.wsgi.application'
 
